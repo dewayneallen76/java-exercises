@@ -8,7 +8,15 @@ public class HelloWorld {
 
         int myFavoriteNumber = 4356;
         String myString = "Whats up dum dum";
-        int myNumber = 345;
+        float myNumber = 314;
+
+        int x = 5;
+        System.out.println(x++);
+        System.out.println(x);
+
+        int y = 5;
+        System.out.println(++y);
+        System.out.println(y);
 
 
         System.out.println(myFavoriteNumber);
