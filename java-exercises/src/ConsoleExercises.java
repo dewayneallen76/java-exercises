@@ -12,6 +12,6 @@ public class ConsoleExercises {
         System.out.println("Enter something");
         userInput = sc.nextLine();
 
-        System.out.println("You entered: ---> \"" + userInput + "\" <--");git
+        System.out.println("You entered: ---> \"" + userInput + "\" <--");
     }
 }
