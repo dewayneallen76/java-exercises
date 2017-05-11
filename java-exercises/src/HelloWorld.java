@@ -8,9 +8,12 @@ public class HelloWorld {
 
         int myFavoriteNumber = 4356;
         String myString = "Whats up dum dum";
+        int myNumber = 345;
+
 
         System.out.println(myFavoriteNumber);
         System.out.println(myString);
+        System.out.println(myNumber);
     }
 
 
