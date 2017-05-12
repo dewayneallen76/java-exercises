@@ -18,7 +18,5 @@ public class ConsoleExercises {
 
         System.out.println("The perimeter is: " + (length + width));
         System.out.println("The area is " + (length * 2 + width * 2));
-
     }
-
 }
