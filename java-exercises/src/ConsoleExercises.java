@@ -6,14 +6,18 @@ import java.util.Scanner;
 public class ConsoleExercises {
 
     public static void main(String[] args) {
-        String userSentence;
+        int length;
+        int width;
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.print("Enter a sentence:");
-        userSentence = sc.nextLine();
+        System.out.println("Enter length: ");
+        System.out.println("Enter width: ");
+        length = sc.nextInt();
+        width = sc.nextInt();
 
-        System.out.print("The sentence you entered was: " + userSentence);
+        System.out.println("The perimeter is: " + (length + width));
+        System.out.println("The area is " + (length * 2 + width * 2));
 
     }
 
