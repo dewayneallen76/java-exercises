@@ -6,18 +6,17 @@ import java.util.Scanner;
 public class ConsoleExercises {
 
     public static void main(String[] args) {
-        String userInput;
-        int integer;
+        int userInt;
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter something");
-//        userInput = sc.nextLine();
-
-        System.out.println("You entered: ---> \"" + userInput + "\" <--");
-
         System.out.println("Enter a number");
-        integer = in.nextInt();
+
+        userInt = sc.nextInt();
+
+        System.out.println("You entered number " + userInt);
+
+
 
     }
 
