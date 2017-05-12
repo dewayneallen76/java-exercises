@@ -14,12 +14,5 @@ public class ConsoleExercises {
 
         System.out.println("You entered: ---> \"" + userInput + "\" <--");
 
-        int userInt;
-        Scanner sc = new Scanner(System.in);
-
-        System.out.println("Enter a number");
-        userInt = sc.nextLine();
-
-        System.out.format("You entered the number : " + userInt);
     }
 }
