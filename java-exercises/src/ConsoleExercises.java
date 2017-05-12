@@ -7,12 +7,18 @@ public class ConsoleExercises {
 
     public static void main(String[] args) {
         String userInput;
+        int integer;
+
         Scanner sc = new Scanner(System.in);
 
         System.out.println("Enter something");
-        userInput = sc.nextLine();
+//        userInput = sc.nextLine();
 
         System.out.println("You entered: ---> \"" + userInput + "\" <--");
 
+        System.out.println("Enter a number");
+        integer = in.nextInt();
+
     }
+
 }
