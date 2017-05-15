@@ -4,10 +4,21 @@
 public class ControlFlowExercises {
 
     public static void main(String[] args) {
-        int integer = 5;
+        int i;
 
-        while(integer <= 15) {
-            System.out.println(integer++);
+        for(i = 0; i <= 100; i++) {
+            if((i % 3) == 0) {
+                System.out.println("Fizz");
+            }
+            if((i % 5) == 0) {
+                System.out.println("Buzz");
+            }
+            if((i % 3) == 0 && i % 5 == 0) {
+                System.out.println("FizzBuzz");
+            } else {
+                System.out.println(String.valueOf(i));
+            }
+
         }
 
     }
