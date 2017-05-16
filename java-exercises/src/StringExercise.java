@@ -4,6 +4,7 @@
 public class StringExercise {
 
     public static void main(String[] args) {
-
+        String word = "Hello";
+        System.out.println(word);
     }
 }
