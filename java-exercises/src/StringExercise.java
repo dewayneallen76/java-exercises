@@ -4,7 +4,7 @@
 public class StringExercise {
 
     public static void main(String[] args) {
-        String word = "Hello";
-        System.out.println(word);
+        String message = "We don't need no education \nWe don't need no thought control";
+        System.out.println(message);
     }
 }
