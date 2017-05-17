@@ -3,13 +3,22 @@
  */
 public class MethodsExercises {
 
-    public static void main(String[] args) {
-        int a = 0;
-        int b = 0;
-        public static int sum(int a, int b) {
-            return (a+b);
-        }
+    int a = 0;
+    int b = 0;
 
+    public static int addNumbers(int a, int b) {
+        return (a + b);
     }
 
+    public int subtractNumbers(int a, int b) {
+        return (a - b);
+    }
+
+    public int multiplyNumbers(int a, int b) {
+        return (a * b);
+    }
+
+    public static void main(String[] args) {
+        System.out.println("The sum of the numbers is " + addNumbers(5,5));
+    }
 }
