@@ -32,7 +32,7 @@ public class MethodsExercises {
     public static void main(String[] args) {
         System.out.println("Addition 5 + 5 using addNumbers method = " + addNumbers(5,5));
         System.out.println("Subtraction 10 - 5 using subtractNumbers method = " + subtractNumbers(10, 5));
-        System.out.println("Multiply 4 * 4 using the mutliplyNumber method = " + multiplyNumbers(4, 4));
+        System.out.println("Multiply 4 * 4 using the multiplyNumber method = " + multiplyNumbers(4, 4));
         System.out.println("Divide 10 by 5 using the divideNumber method = " + divideNumbers(10, 5));
         System.out.println("The modulus of 5 and 15 = " + modulusNumbers(5, 15));
     }
