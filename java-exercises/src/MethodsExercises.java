@@ -6,6 +6,10 @@ public class MethodsExercises {
     int a = 0;
     int b = 0;
 
+    int min = 1;
+    int max = 10;
+    int userInput = getInteger(1, 10);
+
     public static int addNumbers(int a, int b) {
         return (a + b);
     }
@@ -27,6 +31,12 @@ public class MethodsExercises {
 
     public static int modulusNumbers(int a, int b) {
         return (a % b);
+    }
+
+    public static int getInteger( min, max) {
+        while (min < 1 || min < 10) {
+            System.out.println("You entered " + userInput);
+        }
     }
 
     public static void main(String[] args) {
