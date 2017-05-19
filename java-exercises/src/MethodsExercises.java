@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 /**
  * Created by dewayneallen on 5/17/17.
  */
@@ -33,8 +35,9 @@ public class MethodsExercises {
         return (a % b);
     }
 
-    public static int getInteger( min, max) {
+    public static int getInteger(int min, int max, int userInput) {
         while (min < 1 || min < 10) {
+
             System.out.println("You entered " + userInput);
         }
     }
@@ -45,5 +48,10 @@ public class MethodsExercises {
         System.out.println("Multiply 4 * 4 using the multiplyNumber method = " + multiplyNumbers(4, 4));
         System.out.println("Divide 10 by 5 using the divideNumber method = " + divideNumbers(10, 5));
         System.out.println("The modulus of 5 and 15 = " + modulusNumbers(5, 15));
+
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a number between 1 and 10:");
+
+        System.out.println("You entered : " + getInteger(int min, int, max))
     }
 }
