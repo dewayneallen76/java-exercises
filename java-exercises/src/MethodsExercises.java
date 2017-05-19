@@ -10,7 +10,6 @@ public class MethodsExercises {
 
     int min = 1;
     int max = 10;
-    int userInput = getInteger(1, 10);
 
     public static int addNumbers(int a, int b) {
         return (a + b);
@@ -35,10 +34,17 @@ public class MethodsExercises {
         return (a % b);
     }
 
-    public static int getInteger(int min, int max, int userInput) {
-        while (min < 1 || min < 10) {
+    public static int getInteger(int min, int max) {
+        System.out.println("Enter a number between 1 and 10:");
+        Scanner sc = new Scanner(System.in);
+        userInput = sc.nextInt();
+        if (userInput >= min || userInput < max) {
 
+            int userInput = getInteger(min, max);
+            return userInput;
             System.out.println("You entered " + userInput);
+        } else {
+            System.out.println("You did not enter a number between 1 and 10");
         }
     }
 
@@ -49,9 +55,9 @@ public class MethodsExercises {
         System.out.println("Divide 10 by 5 using the divideNumber method = " + divideNumbers(10, 5));
         System.out.println("The modulus of 5 and 15 = " + modulusNumbers(5, 15));
 
-        Scanner sc = new Scanner(System.in);
-        System.out.println("Enter a number between 1 and 10:");
 
-        System.out.println("You entered : " + getInteger(int min, int, max))
+
+
+        System.out.println(getInteger());
     }
 }
