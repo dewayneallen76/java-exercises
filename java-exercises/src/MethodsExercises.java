@@ -5,11 +5,8 @@ import java.util.Scanner;
  */
 public class MethodsExercises {
 
-    int a = 0;
-    int b = 0;
-
-    int min = 1;
-    int max = 10;
+    public static int min = 1;
+    public static int max = 10;
 
     public static int addNumbers(int a, int b) {
         return (a + b);
@@ -34,17 +31,17 @@ public class MethodsExercises {
         return (a % b);
     }
 
-    public static int getInteger(int min, int max) {
+    public static int getInteger() {
+        int userInput;
         System.out.println("Enter a number between 1 and 10:");
         Scanner sc = new Scanner(System.in);
         userInput = sc.nextInt();
-        if (userInput >= min || userInput < max) {
-
-            int userInput = getInteger(min, max);
-            return userInput;
+        if (userInput >= min && userInput <= max) {
             System.out.println("You entered " + userInput);
+            return userInput;
         } else {
             System.out.println("You did not enter a number between 1 and 10");
+            return getInteger();
         }
     }
 
@@ -54,9 +51,6 @@ public class MethodsExercises {
         System.out.println("Multiply 4 * 4 using the multiplyNumber method = " + multiplyNumbers(4, 4));
         System.out.println("Divide 10 by 5 using the divideNumber method = " + divideNumbers(10, 5));
         System.out.println("The modulus of 5 and 15 = " + modulusNumbers(5, 15));
-
-
-
 
         System.out.println(getInteger());
     }
