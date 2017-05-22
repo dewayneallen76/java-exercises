@@ -55,13 +55,18 @@ public class MethodsExercises {
         System.out.println("Enter a number between 1 and 100");
         Scanner sc = new Scanner(System.in);
         userInput = sc.nextInt();
-        if (userInput == randomNumber) {
-            System.out.println("You got it! The number is ");
-            return randomNumber;
-        } else if (userInput > randomNumber) {
-            System.out.println("Too high. Guess again.");
-        } else if (userInput < randomNumber) {
-            System.out.println("Too low. Guess again.");
+        while (userInput != randomNumber) {
+
+            if (userInput > randomNumber) {
+                System.out.println("Too high. Guess again.");
+                userInput = sc.nextInt();
+            } else if (userInput < randomNumber) {
+                System.out.println("Too low. Guess again.");
+                userInput = sc.nextInt();
+            }
+            if (userInput == randomNumber) {
+                System.out.println("You guessed it! The correct number is " + randomNumber);
+            }
         }
         return highLow();
     }
