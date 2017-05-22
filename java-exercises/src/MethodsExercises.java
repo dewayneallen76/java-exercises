@@ -46,6 +46,8 @@ public class MethodsExercises {
         }
     }
 
+
+
     public static int highLow() {
         Random rand = new Random();
         int randomNumber = rand.nextInt(100) + 1;
@@ -72,6 +74,7 @@ public class MethodsExercises {
         System.out.println("The modulus of 5 and 15 = " + modulusNumbers(5, 15));
 
         System.out.println(getInteger());
+
         System.out.println(highLow());
     }
 }
