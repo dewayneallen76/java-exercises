@@ -40,7 +40,7 @@ public class MethodsExercises {
             System.out.println("You entered " + userInput);
             return userInput;
         } else {
-            System.out.println("You did not enter a number between 1 and 10");
+            System.out.println("You did not enter a number between 1 and 10. Try again");
             return getInteger();
         }
     }
