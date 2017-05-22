@@ -45,6 +45,14 @@ public class MethodsExercises {
         }
     }
 
+    public static int highLow() {
+        int userInput;
+        System.out.println("Enter a number between 1 and 100");
+        Scanner sc = new Scanner(System.in);
+        userInput = sc.nextInt();
+
+    }
+
     public static void main(String[] args) {
         System.out.println("Addition 5 + 5 using addNumbers method = " + addNumbers(5,5));
         System.out.println("Subtraction 10 - 5 using subtractNumbers method = " + subtractNumbers(10, 5));
