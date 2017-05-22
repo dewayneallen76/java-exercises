@@ -1,3 +1,4 @@
+import java.util.Random;
 import java.util.Scanner;
 
 /**
@@ -46,11 +47,21 @@ public class MethodsExercises {
     }
 
     public static int highLow() {
+        Random rand = new Random();
+        int randomNumber = rand.nextInt(100) + 1;
         int userInput;
         System.out.println("Enter a number between 1 and 100");
         Scanner sc = new Scanner(System.in);
         userInput = sc.nextInt();
-
+        if (userInput == randomNumber) {
+            System.out.println("You got it! The number is ");
+            return randomNumber;
+        } else if (userInput > randomNumber) {
+            System.out.println("Too high. Guess again.");
+        } else if (userInput < randomNumber) {
+            System.out.println("Too low. Guess again.");
+        }
+        return highLow();
     }
 
     public static void main(String[] args) {
@@ -61,5 +72,6 @@ public class MethodsExercises {
         System.out.println("The modulus of 5 and 15 = " + modulusNumbers(5, 15));
 
         System.out.println(getInteger());
+        System.out.println(highLow());
     }
 }
