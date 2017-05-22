@@ -37,7 +37,7 @@ public class MethodsExercises {
         Scanner sc = new Scanner(System.in);
         userInput = sc.nextInt();
         if (userInput >= min && userInput <= max) {
-            System.out.println("You entered " + userInput);
+            System.out.println("You entered " );
             return userInput;
         } else {
             System.out.println("You did not enter a number between 1 and 10. Try again.");
