@@ -53,7 +53,7 @@ public class MethodsExercises {
         int randomNumber = rand.nextInt(100) + 1;
         int userInput;
         int guesses = 0;
-        System.out.println("Enter a number between 1 and 100");
+        System.out.println("Enter a number between 1 and 100. You have 5 attempts to get the number.");
         Scanner sc = new Scanner(System.in);
         userInput = sc.nextInt();
         while (userInput != randomNumber) {
