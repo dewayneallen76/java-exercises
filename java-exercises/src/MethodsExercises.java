@@ -52,6 +52,7 @@ public class MethodsExercises {
         Random rand = new Random();
         int randomNumber = rand.nextInt(100) + 1;
         int userInput;
+        int guesses = 0;
         System.out.println("Enter a number between 1 and 100");
         Scanner sc = new Scanner(System.in);
         userInput = sc.nextInt();
@@ -60,12 +61,16 @@ public class MethodsExercises {
             if (userInput > randomNumber) {
                 System.out.println("Too high. Guess again.");
                 userInput = sc.nextInt();
+                guesses = guesses + 1;
             } else if (userInput < randomNumber) {
                 System.out.println("Too low. Guess again.");
                 userInput = sc.nextInt();
+                guesses = guesses + 1;
             }
             if (userInput == randomNumber) {
                 System.out.println("You guessed it! The correct number is " + randomNumber);
+            } else if (guesses == 4) {
+                System.out.println("You have reached the maximum number of tries.");
             }
         }
         return highLow();
