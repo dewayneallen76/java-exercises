@@ -70,7 +70,8 @@ public class MethodsExercises {
             if (userInput == randomNumber) {
                 System.out.println("You guessed it! The correct number is " + randomNumber);
             } else if (guesses == 4) {
-                System.out.println("You have reached the maximum number of tries.");
+                System.out.println("You have reached the maximum number of tries. Try again");
+                return highLow();
             }
         }
         return highLow();
