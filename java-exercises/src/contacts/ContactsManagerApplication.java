@@ -5,4 +5,6 @@ package contacts;
  */
 public class ContactsManagerApplication {
     private static Contacts contactsDao = new TextFileContacts();
+
+
 }
