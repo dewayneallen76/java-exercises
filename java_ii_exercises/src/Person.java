@@ -14,7 +14,7 @@ public class Person {
     }
 
     public void sayHello() {
-        System.out.println("Hello ");
+        System.out.println("Hello "+ this.name);
     }
 
     public Person(String name) {
@@ -22,9 +22,8 @@ public class Person {
     }
 
     public static void main(String[] args) {
-        Person person1 = new Person("John");
-        Person person2 = person1;
-        System.out.println(person1 == person2);
+        Person person1 = new Person("Dewayne");
+        person1.sayHello();
 
     }
 }
