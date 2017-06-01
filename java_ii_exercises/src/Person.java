@@ -23,7 +23,9 @@ public class Person {
 
     public static void main(String[] args) {
         Person person1 = new Person("Dewayne");
+        Person person2 = new Person("Kristy");
         person1.sayHello();
+        person2.sayHello();
 
     }
 }
