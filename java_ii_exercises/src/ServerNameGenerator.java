@@ -7,7 +7,7 @@ public class ServerNameGenerator {
         String noun[] = {"airplane", "baby", "octopus", "dog", "cow", "robot", "zombie", "spider", "sword", "dragon"};
         String adjective[] = {"fat", "hairy", "angry", "stinky", "dead", "crappy", "happy", "horny", "ugly", "tiny"};
 
-        System.out.println(generateName(noun, adjective));
+        System.out.println(generateName(adjective, noun));
     }
 
     public static String generateName(String[] noun, String[] adjective) {
